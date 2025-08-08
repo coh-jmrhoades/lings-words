@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a web page.</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            line-height: 1.4;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        h1 {
+            font-size: 4em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        strong {
+            font-weight: bold;
+            color: #ffff00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            font-size: 1.1em;
+        }
+        
+        em {
+            font-style: italic;
+            color: #ffd700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+        
+        .highlight {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .signature {
+            margin-top: 40px;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.2em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1em;
+            color: rgba(255,255,255,0.8);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="pulse">This is a web page.</h1>
+
+        <p class="floating">There's not much here.</p>
+
+        <p class="floating">Just words.</p>
+
+        <p class="highlight pulse"><strong>And you're reading them.</strong></p>
+
+        <p class="floating">We've become obsessed with fancy designs, responsive layouts, and scripts that do magical things.</p>
+
+        <p class="highlight pulse"><strong>But the most powerful tool on the web is still words.</strong></p>
+
+        <p class="floating">I wrote these words, and you're reading them: <em>that's</em> magical.</p>
+
+        <p class="floating">I'm in a little city in British Columbia; you're probably somewhere else. I wrote this early in the morning, June 20th, 2013; you're reading it at a different time. I wrote this on my laptop; you could be reading this on your phone, a tablet or a desktop.</p>
+
+        <p class="floating">You and I have been able to connect because <em>I wrote this</em> and <em>you're reading it.</em> <strong>That's the web.</strong> Despite our different locations, devices, and time-zones we can connect <em>here,</em> on a simple HTML page.</p>
+
+        <p class="floating">I wrote this in a text editor. It's 6 kB. I didn't need a Content Management System, a graphic designer, or a software developer. There's not much code on this page at all: just simple markup for paragraphs, hierarchy, and emphasis.</p>
+
+        <p class="floating">I remember teaching my daughter to code HTML when she was 8. The first thing she wrote was a story about a squirrel. She wasn't "writing HTML"; <strong>she was sharing something with the world.</strong> She couldn't believe that she could write a story on our home computer, and then publish it for the world to see. She didn't care about HTML; she cared about sharing her stories.</p>
+
+        <p class="highlight pulse"><strong>You are still reading.</strong></p>
+
+        <p class="floating">Think about all the things you could communicate with a simple page like this. If you're a businessperson, you could sell something. If you're a teacher, you could teach something. If you're an artist, you could show something you've made. <strong>And if your words are good, people will read them.</strong></p>
+
+        <p class="floating">If you're a web designer, I challenge you to think about the words first. Instead of starting with a style guide or a Photoshop mockup, <em>start with words on a page.</em></p>
+
+        <p class="floating">What do you have to say? If you don't know, there's not much use in adding all that other cruft. <strong>Just start with one page</strong>, with a single focus. Write it and publish it, and then <em>iterate on that.</em> Every time you're about to add something, ask yourself: does this help me communicate better? Will that additional styling, image, or hyperlink give my audience more understanding? If the answer is "no," don't add it.</p>
+
+        <p class="highlight pulse"><strong>At its heart, web design should be about words.</strong> Words don't come <em>after</em> the design is done. Words are the beginning, the core, the focus.</p>
+
+        <p class="floating">Start with words.</p>
+
+        <div class="signature">
+            Cheers,<br>
+            Justin Jackson<br>
+            @mijustin
+        </div>
+
+        <div class="footer">
+            Do you like to make stuff on the web? Subscribe to my newsletter.<br>
+            I also like creating podcasts.
+        </div>
+    </div>
+</body>
+</html> 
