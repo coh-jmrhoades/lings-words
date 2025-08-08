@@ -1,0 +1,38 @@
+title: "Words & Web Pages"
+description: "A collection of web pages inspired by Justin Jackson's words.html"
+author: "Justin Jackson"
+email: "justin@justinjackson.ca"
+baseurl: "/words" # the subpath of your site, e.g. /blog
+url: "https://coh-jmrhoades.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: coh-jmrhoades
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default" 
